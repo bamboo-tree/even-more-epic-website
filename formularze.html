@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/formularze.css" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="./img/favicon/icons8-cat-32.png">
+        <title>EMEW - Formularze</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h2>Szybki kurs HTML</h2>
+            </header>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Podstawowe znaczniki</a></li>
+                    <li><a href="tabele.html">Tworzenie tabeli</a></li>
+                    <li>
+                        <a href="">Formularze</a>
+                        <ul>
+                            <li><a href="formularze.html">Pola formularza</a></li>
+                            <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html" title="">Galeria</a></li>
+                </ul>
+            </nav>
+            <div id="content">
+                <h3>Przykładowy formularz HTML:</h3>
+                <form action="mailto:beatap@cs.pollub.pl" method="post">
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" name="nazwisko">
+                    <br>
+                    <label for="wiek">Wiek:</label>
+                    <input type="text" id="wiek" name="wiek">
+                    <br>
+                    <label for="panstwo">Państwo:</label>
+                    <select name="panstwo" id="panstwo">
+                        <option value="pl">Polska</option>
+                        <option value="ue">Ukraina</option>
+                        <option value="us">USA</option>
+                    </select>
+                    <br>
+                    <label for="email">e-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <h3>Zakawiam tutorail z języka:</h3>
+                    <input type="checkbox" id="php" name="php">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" id="cpp" name="cpp">
+                    <label for="cpp">C/C++</label>
+                    <input type="checkbox" id="java" name="java">
+                    <label for="java">Java</label>
+                    <br>
+                    <h3>Sposób zapłaty:</h3>
+                    <input type="radio" id="eurocard" name="platnosc">
+                    <label for="eurocard">eurocard</label>
+                    <input type="radio" id="visa" name="platnosc">
+                    <label for="visa">visa</label>
+                    <input type="radio" id="przelew" name="platnosc">
+                    <label for="przelew">przelew bankowy</label>
+                    <br>
+                    <input class="btn" type="submit" value="Wyślij">
+                    <input class="btn" type="reset" value="Anuluj">
+                </form>
+            </div>
+            <aside>
+                <div class="box">
+                    <h3>Walidatory:</h3>
+                    <ul>
+                        <li> <a href="http://validator.w3.org/">HTML </a></li>
+                        <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Kursy:</h3>
+                    <ul>
+                        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                    </ul>
+                </div>
+            </aside>
+            <footer>
+                &copy;MK
+            </footer>
+        </div>
+    </body>
+</html>
