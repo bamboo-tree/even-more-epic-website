@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css" type="text/css"/>
         <link rel="stylesheet" href="./css/galeria.css" type="text/css"/>
-        <link rel="icon" type="image/x-icon" href="./img/favicon/icons8-cat-32.png">
         <title>Epic Website - main</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon/icons8-cat-32.png">
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/favicon/icons8-cat-32.png">
+        <!-- customowa czcionka od google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="container">
+        <div id="container" class="my-font">
             <header>
                 <h2>Szybki kurs HTML</h2>
             </header>
@@ -27,36 +33,40 @@
                     <li><a href="galeria.html" title="">Galeria</a></li>
                 </ul>
             </nav>
-            <div id="content">
-                <h3>Galeria zdjęć</h3>
-                <a href="./img/zdjecia/obraz1.jpg" target="_blank"><img src="./img/miniaturki/obraz1.jpg" alt="obraz 1"></a>
-                <a href="./img/zdjecia/obraz2.jpg" target="_blank"><img src="./img/miniaturki/obraz2.jpg" alt="obraz 2"></a>
-                <a href="./img/zdjecia/obraz3.jpg" target="_blank"><img src="./img/miniaturki/obraz3.jpg" alt="obraz 3"></a>
-                <a href="./img/zdjecia/obraz4.jpg" target="_blank"><img src="./img/miniaturki/obraz4.jpg" alt="obraz 4"></a>
-                <a href="./img/zdjecia/obraz5.jpg" target="_blank"><img src="./img/miniaturki/obraz5.jpg" alt="obraz 5"></a>
-                <a href="./img/zdjecia/obraz6.jpg" target="_blank"><img src="./img/miniaturki/obraz6.jpg" alt="obraz 6"></a>
-                <a href="./img/zdjecia/obraz7.jpg" target="_blank"><img src="./img/miniaturki/obraz7.jpg" alt="obraz 7"></a>
-                <a href="./img/zdjecia/obraz8.jpg" target="_blank"><img src="./img/miniaturki/obraz8.jpg" alt="obraz 8"></a>
-                <a href="./img/zdjecia/obraz9.jpg" target="_blank"><img src="./img/miniaturki/obraz9.jpg" alt="obraz 9"></a>
+            <div id="middle">
+                <div id="content">
+                    <h3>Galeria zdjęć</h3>
+                    <div id="galeria">
+                        <a href="./img/zdjecia/obraz1.jpg" target="_blank"><img src="./img/miniaturki/obraz1.jpg" alt="obraz 1"></a>
+                        <a href="./img/zdjecia/obraz2.jpg" target="_blank"><img src="./img/miniaturki/obraz2.jpg" alt="obraz 2"></a>
+                        <a href="./img/zdjecia/obraz3.jpg" target="_blank"><img src="./img/miniaturki/obraz3.jpg" alt="obraz 3"></a>
+                        <a href="./img/zdjecia/obraz4.jpg" target="_blank"><img src="./img/miniaturki/obraz4.jpg" alt="obraz 4"></a>
+                        <a href="./img/zdjecia/obraz5.jpg" target="_blank"><img src="./img/miniaturki/obraz5.jpg" alt="obraz 5"></a>
+                        <a href="./img/zdjecia/obraz6.jpg" target="_blank"><img src="./img/miniaturki/obraz6.jpg" alt="obraz 6"></a>
+                        <a href="./img/zdjecia/obraz7.jpg" target="_blank"><img src="./img/miniaturki/obraz7.jpg" alt="obraz 7"></a>
+                        <a href="./img/zdjecia/obraz8.jpg" target="_blank"><img src="./img/miniaturki/obraz8.jpg" alt="obraz 8"></a>
+                        <a href="./img/zdjecia/obraz9.jpg" target="_blank"><img src="./img/miniaturki/obraz9.jpg" alt="obraz 9"></a>
+                    </div>
+                </div>
+                <aside>
+                    <div class="box">
+                        <h3>Walidatory:</h3>
+                        <ul>
+                            <li> <a href="http://validator.w3.org/">HTML </a></li>
+                            <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Kursy:</h3>
+                        <ul>
+                            <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                            <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                            <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                            <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
-            <aside>
-                <div class="box">
-                    <h3>Walidatory:</h3>
-                    <ul>
-                        <li> <a href="http://validator.w3.org/">HTML </a></li>
-                        <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h3>Kursy:</h3>
-                    <ul>
-                        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
-                        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
-                        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
-                        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
-                    </ul>
-                </div>
-            </aside>
             <footer>
                 &copy;MK
             </footer>

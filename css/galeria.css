@@ -1,0 +1,20 @@
+#galeria{
+    background: #202020;
+    width: 80%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2% 0;
+    box-shadow: 0 12px #c3bbaf inset;
+    border-radius: 0 30px 30px 0 ;
+}
+#galeria a{
+    display: block;
+    padding: 1%;
+    margin: 0 5%;
+    width: 20%;
+}
+#galeria a img{
+    width: 100%;
+    border-radius: 10px;
+}
