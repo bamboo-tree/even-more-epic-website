@@ -107,7 +107,7 @@ header h2{
     border-radius: 0 30px 30px 0 ;
     list-style-type: none;
 }
-#content a {
+#button {
     display: block;
     width: 50%;
     background: #EF798A;
@@ -116,7 +116,7 @@ header h2{
     border-radius: 0 30px 30px 0;
     text-decoration: none;
 }
-#content a:hover{
+#button:hover{
     background: #47db44;
     box-shadow: 0 8px #359833;
 }

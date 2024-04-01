@@ -1,0 +1,49 @@
+#cut{
+    background-color: #202020;
+    box-shadow: 0 12px #c3bbaf inset;
+    border-radius: 0 30px 30px 0 ;
+    padding: 4%;
+    margin: 0;
+    width: 80%;
+}
+table{
+    width: 100%;
+    color: #FFF4E4;
+}
+caption{
+    color: #FFF4E4;
+    padding: 2%;
+}
+thead th{
+    border-radius: 10px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFF4E4;
+}
+tbody td{
+    border-radius: 10px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFF4E4;
+}
+tbody td:nth-child(odd){
+    background: #303030;
+    letter-spacing: 5px;
+}
+tfoot td{
+    border-radius: 10px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFF4E4;
+    text-align: center;
+}
+tfoot a{
+    color: #606060;
+    text-decoration: none;
+}
+tfoot a:hover{
+    color: #FFF4E4;
+}
