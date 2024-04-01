@@ -16,48 +16,56 @@ body{
 }
 #container{
     width: 90%;
-    background-color: #fff;
+    background: #FFF4E4;
+    box-shadow: 0 12px #c3bbaf;
     border-radius: 20px;
+    margin-top: 1%;
 }
 header{
-    background: #f00;
+    background: #3D315B;
     text-align: center;
     width: 88%;
     padding: 1%;
     margin: 0 5% 8px 5%;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 8px #202020;
-    font-size: 140%;
+    border-radius: 0 0 30px 30px;    
+}
+header h2{
+    font-size: 180%;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #fff;
 }
 /* rozwijane menu - start*/
 #navigation{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 0;
-    margin: 2% 0 2% 10% ;
+    padding: 0 0 12px 0;
+    margin: 2% 0 1% 10% ;
     overflow: hidden;
     font-size: 100%;
 }
 #navigation li{
     width: 24%;
     list-style-type: none;
-    background: #98bed8;
+    background: #17BEBB;
+    border-radius: 30px;
+    box-shadow: 0 8px #0f7977;
 }
-#navigation li:hover{
-    background: #f0f0f0;
+#navigation li:hover, #navigation li li:hover{
+    background: #0f7977;
+    box-shadow: 0 8px #073a39;
 }
 #navigation li a{
     display : block;
     padding : 5%;
     text-align: center;
     text-decoration : none;
+    color: #fff;
+    font-weight: 700;
 }
 #navigation li ul li{
     width: 100%;
-}
-#navigation li li:hover {
-    background: white;
 }
 #navigation li ul {
     overflow: hidden;
@@ -65,8 +73,8 @@ header{
 }
 #navigation li:hover ul {
     position: absolute;
-    background: #aaa;
-    padding: 0;
+    background: none;
+    padding: 0 0 8px 0;
     display: block;
     width: 17.3%;
 }
@@ -78,45 +86,97 @@ header{
 }
 #content{
     width: 70%;
-    background-color: #0f0;
 }
 #content h3{
     padding: 2% 2% 2% 5%;
-    width: 70%;
-    background-color: #00f;
+    margin-bottom: 2%;
+    width: 60%;
+    background-color: #5AA9E6;
+    box-shadow: 0 8px #427daa;
+    color: #202020;
+    letter-spacing: 2px;
     border-radius: 0 30px 30px 0 ;
 }
 #content ul{
-    padding: 2% 2% 2% 5%;
-    margin: 0;
+    padding: 5%;
+    margin: 0 0 2% 0;
     width: 80%;
-    background: #f00;
+    background: #202020;
+    color: #FFF4E4;
+    box-shadow: 0 12px #c3bbaf inset;
     border-radius: 0 30px 30px 0 ;
     list-style-type: none;
 }
-#content a{
+#content a {
     display: block;
     width: 50%;
-    background: #00f;
+    background: #EF798A;
+    box-shadow: 0 8px #ae5865;
     padding: 0 2% 0 5%;
     border-radius: 0 30px 30px 0;
-    
+    text-decoration: none;
+}
+#content a:hover{
+    background: #47db44;
+    box-shadow: 0 8px #359833;
 }
 #content a p{
     display: flex;
     align-items: center;
+    color: #202020;
+    letter-spacing: 2px;
 }
 #content a p img{
     margin-left: 5%;
+    box-shadow: 0 8px #bdbdbd;
 }
-
-
 aside{
     width: 30%;
-    background-color: #00f;
+}
+.box ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #202020;
+    box-shadow: 0 12px #c3bbaf inset;
+    width: 70%;
+    list-style-type: none;
+    padding: 5%;
+    margin: 0% 10% 5% 10%;
+    border-radius: 30px;
+}
+.box ul li{
+    padding: 1% 0;
+}
+.box ul li a{
+    text-decoration: none;
+    color: #d5d0c9;
+    text-shadow: 0 5px 5px #000;
+    letter-spacing: 3px;
+    margin-left: 5%;
+}
+.box ul li a:hover{
+    color: #fff;
+    text-shadow: 0 5px 0px #000;
+}
+.box h3{
+    padding: 2% 2% 2% 5%;
+    margin: 0 0 5% 23%;
+    width: 70%;
+    letter-spacing: 2px;
+    background: #5AA9E6;
+    box-shadow: 0 8px #427daa;
+    border-radius: 30px 0 0 30px ;
+    float: right;
+    color: #202020;
 }
 footer{
-    width: 100%;
+    margin: 2% 8% 0 8%;
+    width: 80%;
     padding: 1%;
     text-align: center;
+    background: #3D315B;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 12px #1f192e;
+    color: #EF798A;
 }
