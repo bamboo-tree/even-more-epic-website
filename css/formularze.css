@@ -1,0 +1,23 @@
+#dane label{
+    display: block;
+    width: 20%;
+    float: left;
+    padding: 5px;
+    margin-bottom: 1%;
+    color: #202020;
+}
+#dane input, #dane select{
+    padding: 5px;
+    display: block;
+    width: 30%;
+    margin-bottom: 1%;
+}
+h4{
+    padding: 5px;
+    margin: 1% 0;
+}
+.btn{
+    padding: 5px;
+    margin: 1% 5px;
+    width: 10%;
+}
