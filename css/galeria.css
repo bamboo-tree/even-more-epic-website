@@ -1,6 +1,7 @@
 #galeria{
+    box-sizing: border-box;
     background: #202020;
-    width: 80%;
+    width: 85%;
     padding: 2%;
     display: flex;
     flex-wrap: wrap;

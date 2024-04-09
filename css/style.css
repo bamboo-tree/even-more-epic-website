@@ -12,6 +12,7 @@ body, h2, h3, p{
 body{
     display: flex;
     justify-content: center;
+    padding: 12px 0 24px;
     background-color: #202020;
 }
 #container{
@@ -19,12 +20,12 @@ body{
     background: #FFF4E4;
     box-shadow: 0 12px #c3bbaf;
     border-radius: 20px;
-    margin-top: 1%;
 }
 header{
+    box-sizing: border-box;
     background: #3D315B;
     text-align: center;
-    width: 88%;
+    width: 90%;
     padding: 1%;
     margin: 0 5% 8px 5%;
     border-radius: 0 0 30px 30px;    
@@ -37,7 +38,9 @@ header h2{
 }
 /* rozwijane menu - start*/
 #navigation{
+    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
     padding: 0 0 12px 0;
@@ -46,6 +49,7 @@ header h2{
     font-size: 100%;
 }
 #navigation li{
+    margin: 1% 0;
     width: 24%;
     list-style-type: none;
     background: #17BEBB;
@@ -79,15 +83,17 @@ header h2{
     width: 17.3%;
 }
 /* koniec */
-#middle{
+main{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 #content{
+    box-sizing: border-box;
     width: 70%;
 }
 #content h3{
+    box-sizing: border-box;
     padding: 2% 2% 2% 5%;
     margin-bottom: 2%;
     width: 60%;
@@ -98,9 +104,10 @@ header h2{
     border-radius: 0 30px 30px 0 ;
 }
 #content ul{
+    box-sizing: border-box;
     padding: 5%;
     margin: 0 0 2% 0;
-    width: 80%;
+    width: 85%;
     background: #202020;
     color: #FFF4E4;
     box-shadow: 0 12px #c3bbaf inset;
@@ -108,8 +115,9 @@ header h2{
     list-style-type: none;
 }
 #button {
+    box-sizing: border-box;
     display: block;
-    width: 50%;
+    width: 45%;
     background: #EF798A;
     box-shadow: 0 8px #ae5865;
     padding: 0 2% 0 5%;
@@ -131,15 +139,17 @@ header h2{
     box-shadow: 0 8px #bdbdbd;
 }
 aside{
+    box-sizing: border-box;
     width: 30%;
 }
 .box ul{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #202020;
     box-shadow: 0 12px #c3bbaf inset;
-    width: 70%;
+    width: 80%;
     list-style-type: none;
     padding: 5%;
     margin: 0% 10% 5% 10%;
@@ -160,9 +170,10 @@ aside{
     text-shadow: 0 5px 0px #000;
 }
 .box h3{
+    box-sizing: border-box;
     padding: 2% 2% 2% 5%;
     margin: 0 0 5% 23%;
-    width: 70%;
+    width: 100%;
     letter-spacing: 2px;
     background: #5AA9E6;
     box-shadow: 0 8px #427daa;
@@ -171,7 +182,8 @@ aside{
     color: #202020;
 }
 footer{
-    margin: 2% 8% 0 8%;
+    box-sizing: border-box;
+    margin: 2% 10% 0 10%;
     width: 80%;
     padding: 1%;
     text-align: center;
@@ -179,4 +191,29 @@ footer{
     border-radius: 30px 30px 0 0;
     box-shadow: 0 12px #1f192e;
     color: #EF798A;
+}
+@media screen and (max-width: 800px) {
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #content{
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    aside{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #navigation li{
+        box-sizing: border-box;
+        width: 48%;
+        margin: 1% 0;
+    }
+    #navigation li:hover ul {
+        width: 34.6%;
+    }
 }

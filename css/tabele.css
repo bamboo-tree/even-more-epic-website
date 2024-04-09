@@ -1,10 +1,11 @@
 #cut{
+    box-sizing: border-box;
     background-color: #202020;
     box-shadow: 0 12px #c3bbaf inset;
     border-radius: 0 30px 30px 0 ;
     padding: 4%;
     margin: 0;
-    width: 80%;
+    width: 85%;
 }
 table{
     width: 100%;
